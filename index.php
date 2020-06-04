@@ -14,5 +14,5 @@ if (mysqli_connect_errno()) {
 
 $sql = "SELECT * FROM member";
 $result = mysqli_query($con, $sql);
-var_dump($result->num_rows);
+var_dump($result);
 # var_dump는 화면에 찍어주는 변수(배열 찍을때) / echo를 더 많이 사용
