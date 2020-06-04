@@ -18,13 +18,9 @@ var_dump($result);
 # var_dump는 화면에 찍어주는 변수(배열 찍을때) / echo를 더 많이 사용
 
 
-while($row = mysqli_fetch_array($result)) {
-    echo '<h2>'.$row['title'].'</h2>';
-    echo $row['time'];
-}
 ?>
 
-<table>
+<table border="1">
     <tr>
         <td>
             타이틀명
@@ -34,11 +30,13 @@ while($row = mysqli_fetch_array($result)) {
         </td>
     </tr>
     <tr>
+        <?php while($row = mysqli_fetch_array($result)) { ?>
         <td>
-            1
+            <?php echo $row['title'];?>
         </td>
         <td>
-            2
+            <?php echo $row['time'];?>
         </td>
+        <?php }?>
     </tr>
 </table>
