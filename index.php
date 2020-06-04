@@ -22,3 +22,23 @@ while($row = mysqli_fetch_array($result)) {
     echo '<h2>'.$row['title'].'</h2>';
     echo $row['time'];
 }
+?>
+
+<table>
+    <tr>
+        <td>
+            타이틀명
+        </td>
+        <td>
+            시간
+        </td>
+    </tr>
+    <tr>
+        <td>
+            1
+        </td>
+        <td>
+            2
+        </td>
+    </tr>
+</table>
