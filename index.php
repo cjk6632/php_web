@@ -20,6 +20,7 @@ var_dump($result);
 
 ?>
 
+<!-- tr이 세로 / td가 가로 -->
 <table border="1">
     <tr>
         <td>
@@ -29,8 +30,8 @@ var_dump($result);
             시간
         </td>
     </tr>
+    <?php while($row = mysqli_fetch_array($result)) { ?>
     <tr>
-        <?php while($row = mysqli_fetch_array($result)) { ?>
         <td>
             <?php echo $row['title'];?>
         </td>
