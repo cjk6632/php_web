@@ -29,6 +29,9 @@ var_dump($result);
         <td>
             시간
         </td>
+        <td>
+            내용
+        </td>
     </tr>
     <?php while($row = mysqli_fetch_array($result)) { ?>
     <tr>
@@ -37,6 +40,9 @@ var_dump($result);
         </td>
         <td>
             <?php echo $row['time'];?>
+        </td>
+        <td>
+            <?php echo $row['content'];?>
         </td>
         <?php }?>
     </tr>
