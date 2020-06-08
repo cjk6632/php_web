@@ -1,5 +1,6 @@
 <?php
 # php 변수는 $ 붙여서 사용
+# AWS자체에 /var/www/html/ 경로 내에 특정 디렉터리를 생성(여기선 php_web)하여 해당 경로에 있는 파일을 동기화 해서 브라우저에서 확인
 
 
 // Create connection
@@ -24,7 +25,7 @@ var_dump($result);
 <table border="1">
     <tr>
         <td>
-            타이틀명
+            타이틀명 수정
         </td>
         <td>
             시간
@@ -47,3 +48,7 @@ var_dump($result);
         <?php }?>
     </tr>
 </table>
+
+<!-- 다음주 과제는 HTML 폼 데이터 작성 관련해서 미리 보고 오기 (미리 개발 가능하면 하기) -> html 게시글 등록과 로그인 페이지 나오는 정도
+php 튜토리얼은 생활코딩에서 훑어보는 수준으로 보고오기
+# incorrect sting value -> 하이디 sql 한글 안들어가는 문제 처리 -->
