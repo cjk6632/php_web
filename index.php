@@ -1,6 +1,9 @@
 <?php
 # php 변수는 $ 붙여서 사용
-# AWS자체에 /var/www/html/ 경로 내에 특정 디렉터리를 생성(여기선 php_web)하여 해당 경로에 있는 파일을 동기화 해서 브라우저에서 확인
+# github에 php_web이란 이름의 저장소를 생성 후, AWS ubuntu의 /var/www/html/ 경로 내에 특정 디렉터리를 생성(여기선 php_web)하여 해당 경로에 있는 파일을 동기화 해서 브라우저에서 확인
+# ㄴ 즉 github에 commit & push하여, 업데이트 후에, AWS ubuntu에서 'git pull https://github.com/cjk6632/php_web/' 이와같은 방식으로 동기화
+# ㄴ 이후 브라우저에서 '15.164.220.30/php_web/index.php'를 입력하면 업데이트 된것을 확인할 수 있음
+# ㄴ 다른 웹 프로그래밍 파일을 해당 github repository에 올렸다면 접근 방식은 '15.164.220.30/php_web/해당파일이름' 처럼 접근하면 됨
 
 
 // Create connection
