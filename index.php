@@ -25,7 +25,7 @@ var_dump($result);
 <table border="1">
     <tr>
         <td>
-            타이틀명 수정
+            타이틀명
         </td>
         <td>
             시간
