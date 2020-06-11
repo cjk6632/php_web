@@ -19,9 +19,11 @@
 
     $row = mysqli_fetch_array($result);
 
+    var_dump($row);
+
     if ($result['num_rows'] > 0) {
-        $_SESSION['id'] = $row[0]['id'];
+        $_SESSION['id'] = $row['id'];
     }
 
-    var_dump($result)
+    var_dump($_SESSION)
 ?>
