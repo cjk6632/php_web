@@ -17,7 +17,7 @@
     $sql = "SELECT * FROM members where id = '".$_POST['id']."' and password = '".$_POST['pass']."'";
     $result = mysqli_query($con, $sql);
 
-    $row = mysqli_fetch_array($result);
+    $row = mysqli_fetch_row($result);
 
     var_dump($row);
 
