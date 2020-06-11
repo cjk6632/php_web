@@ -1,5 +1,7 @@
 <?php
-    var_dump($_POST)
+    error_reporting(E_ALL);
+
+    ini_set("display_errors", 1);
 
     // Create connection
     $con = mysqli_connect('15.164.220.30','root','white!2577','study');
