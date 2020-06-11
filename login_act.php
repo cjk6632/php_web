@@ -13,6 +13,7 @@
 
 
     $sql = "SELECT * FROM member where id = '".$_POST['id']."' and pw = '".$_POST['pass']."'";
+    echo $sql;
     $result = mysqli_query($con, $sql);
 
     var_dump($result)
