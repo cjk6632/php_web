@@ -21,7 +21,7 @@
 
     var_dump($row);
 
-    if ($result['num_rows'] > 0) {
+    if ($result->num_rows > 0) {
         $_SESSION['id'] = $row['id'];
     }
 
