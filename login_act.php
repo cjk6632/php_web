@@ -6,7 +6,8 @@
     session_start(); # php에서 세션 연결환경 시작
 
     // Create connection
-    $con = mysqli_connect('zz.zz.zz.zz','root','xxxx','study');
+    $con = mysqli_connect('XX.XX.XX.XX','XX','XXX','study');
+    $con->set_charset("utf8");
 
     // Check connection
     if (mysqli_connect_errno()) {
@@ -14,7 +15,7 @@
     }
 
 
-    $sql = "SELECT * FROM members where id = '".$_POST['id']."' and password = '".$_POST['pass']."'";
+    $sql = "SELECT * FROM members where id = '".$_POST['id']."' and password = '".$_POST['password']."'";
     # mysqli pdo 방식 적용하는법 17라인에 써서 sql IJ 차단 하는 코드로 변경하기
     # $_POST['id'] 앞에 mysqli_real_escape_string 함수의 경우 모든 변수에 다 적용이 필요해서 리소스 문제로 자주 사용되지 않음(쓸 수는 있음)
     $result = mysqli_query($con, $sql);
