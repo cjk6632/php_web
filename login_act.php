@@ -6,7 +6,7 @@
     session_start(); # php에서 세션 연결환경 시작
 
     // Create connection
-    $con = mysqli_connect('XX.XX.XX.XX','XX','XXX','study');
+    $con = mysqli_connect('15.164.220.30','root','white!2577','study');
     $con->set_charset("utf8");
 
     // Check connection
