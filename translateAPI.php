@@ -4,8 +4,8 @@ ini_set("display_errors", 1);
 
 
 // 네이버 Papago NMT 기계번역 Open API 예제
-$client_id = "ouJWvtT0n0YbkZY55OLh"; // 네이버 개발자센터에서 발급받은 CLIENT ID
-$client_secret = "dnepJacgn8";// 네이버 개발자센터에서 발급받은 CLIENT SECRET
+$client_id = "xxxxx"; // 네이버 개발자센터에서 발급받은 CLIENT ID
+$client_secret = "xxxxxx";// 네이버 개발자센터에서 발급받은 CLIENT SECRET
 
 $encText = urlencode("반갑습니다.");
 $postvars = "source=ko&target=en&text=".$encText;
